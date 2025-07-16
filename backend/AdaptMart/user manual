@@ -1,0 +1,59 @@
+AdaptMart API Documentation
+
+for admin use: use email:"sjwebworkss@gmail.com"
+                password:"12345"
+
+for user use: use email:"saiprasanthjampana@gmail.com"
+                password:"54321"
+
+after login if nav bar is not visible just refresh it
+
+
+Overview
+This document describes the REST APIs for the AdaptMart E-commerce Application
+including authentication, user features (cart, orders), and admin features (add/update products, view orders).
+Auth APIs
+1. Register New User (POST /auth/register)
+Body: { "userName": "prasanth", "email": "example@gmail.com", "password": "yourPassword" }
+Response: "User registered successfully"
+
+
+2. Login (POST /auth/login)
+Body: { "email": "example@gmail.com", "password": "yourPassword" }
+Response: { token, userId, name, email }
+Cart APIs (USER) - Requires JWT with role 'USER'
+
+
+
+3. Add to Cart (POST /cart/add)
+
+
+4. View Cart (GET /cart/getall?uid=1)
+
+5. Update Quantity (PUT /cart/update)
+
+6. Remove from Cart (DELETE /cart/remove?userId=1&productId=10)
+Order APIs (USER)
+
+
+7. Place Order (POST /orders/place?userId=1)
+
+8. Get User Orders (GET /orders/fetch?uid=1)
+
+
+Admin APIs (ADMIN) - Requires JWT with role 'ADMIN'
+
+
+9. Add Product (POST /admin/add)
+
+
+10. Update Product (POST /admin/update)
+
+
+11. View All Orders (GET /admin/allorders)
+
+
+How to Use:
+1. Register/Login to get JWT token.
+2. Save token in localStorage or client storage.
+3. Attach token to requests: Authorization: Bearer <your_token>
