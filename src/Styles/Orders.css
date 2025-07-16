@@ -1,0 +1,108 @@
+.orders-wrapper {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.orders-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.no-orders-message {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.order-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.order-date {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.status-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #e0e0e0;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.status-chip.placed {
+  background-color: #e0f5ec;
+  color: #1a7f5a;
+}
+
+.order-items {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-item-info .item-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.item-meta {
+  font-size: 14px;
+  color: #555;
+}
+
+.order-footer {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 16px;
+  text-align: right;
+}
+
+.order-total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+.login-page {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(120deg, #000428, #004e92);
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.login-box h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.login-box input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 90%;
+  color: white;
+  font-size: 14px;
+}
+
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.03);
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.register-link a {
+  color: #43cea2;
+  text-decoration: none;
+  font-weight: 600;
+}
+.logout-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
